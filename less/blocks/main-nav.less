@@ -1,0 +1,70 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav__wrapper {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  z-index: 100;
+
+  width: 255px;
+}
+
+.main-nav__list--site-list  {
+  text-align: left;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #826550;
+
+  box-shadow: inset 5px 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__list--user-list {
+  text-transform: none;
+  background-color: #6a4d38;
+  box-shadow: inset 5px 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__list-item {
+  padding: 11px;
+  padding-left: 15px;
+
+  border-top: 1px solid #71543f;
+  border-bottom: 1px solid #886e5b;
+}
+
+.main-nav__link {
+  color: #ffffff;
+}
+
+.main-nav__link--reg::before,
+.main-nav__link--login::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  background: url("../img/header-icons.png") no-repeat;
+}
+
+.main-nav__link--reg::before {
+  background-position: 0% 57%;
+}
+
+.main-nav__link--login::before {
+  background-position: 0% 29%;
+}
+
+.main-nav__link--reg:hover::before {
+  background-position: 25% 57%;
+}
+.main-nav__link--login:hover::before {
+  background-position: 25% 29%;
+}
