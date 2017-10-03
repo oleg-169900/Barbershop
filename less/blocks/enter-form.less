@@ -1,0 +1,118 @@
+.enter-form {
+  display: none;
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  z-index: 1000;
+
+  width: 280px;
+  padding: 30px 20px;
+  padding-bottom: 35px;
+
+  color: #000000;
+
+  background-color: #f8f5f2;
+
+  transform: translateX(-50%);
+}
+
+.enter-form__title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.enter-form__input {
+  width: 225px;
+  padding: 15px 20px;
+  padding-right: 35px;
+  margin-bottom: 5px;
+  border: 1px solid #e5ddd5;
+}
+
+.enter-form__input--login {
+  background: #ffffff url("../img/login.png") no-repeat 95% center;
+}
+
+.enter-form__input--password {
+  background: #ffffff url("../img/password.png") no-repeat 95% center;
+}
+
+.enter-form__text {
+  margin-bottom: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.enter-form__checkbox-field {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.enter-form__checkbox {
+  display: none;
+}
+
+.enter-form__checkbox-text {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.enter-form__link {
+  font-size: 15px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.enter-form__link:hover {
+  text-decoration: none;
+}
+
+.enter-form__checkbox-text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+
+  background: #ffffff;
+  border: 2px solid #e5ddd5;
+}
+
+.enter-form__checkbox:checked + .enter-form__checkbox-text::before  {
+  background: #ffffff url("../img/yes.svg") no-repeat center;
+}
+
+.enter-form__btn {
+  width: 130px;
+  height: 50px;
+  margin-top: 30px;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.enter-form__btn--enter {
+  margin-right: 15px;
+  color: #ffffff;
+  background-color: #826550;
+}
+
+.enter-form__btn--close {
+  color: #000000;
+  border: 1px solid #e5ddd5;
+}
+
+// .field-checkbox__item:hover .field-checkbox__text::before {
+//   border-color: @primary-color;
+// }
+//
+// .field-checkbox__item:active .field-checkbox__text::before {
+//   border-color: @secondary-color;
+// }
+
+.show {
+  display: block;
+}
