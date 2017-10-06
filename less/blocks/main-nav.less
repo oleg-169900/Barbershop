@@ -10,7 +10,7 @@
   right: 0;
   z-index: 100;
 
-  width: 255px;
+  width: 79.7%;
 }
 
 .main-nav__list--site-list  {
@@ -68,4 +68,35 @@
 }
 .main-nav__link--login:hover::before {
   background-position: 25% 29%;
+}
+
+
+@media @tablet-width {
+  .main-nav {
+    display: block;
+    width: 100%;
+    background-color: #000000;
+  }
+
+  .main-nav__wrapper {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .main-nav__list {
+    display: flex;
+    background-color: #000000;
+    box-shadow: none;
+  }
+
+  .main-nav__list-item {
+    border: none;
+  }
+
+  .main-nav__text--reg,
+  .main-nav__text--login {
+    display: none;
+  }
 }

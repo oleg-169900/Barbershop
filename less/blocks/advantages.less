@@ -3,6 +3,11 @@
   background: url("../img/triangle-mobile-white.svg") no-repeat bottom / 105%;
 }
 
+.advantages__wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .advantages__title {
   text-align: center;
   text-transform: uppercase;
@@ -12,6 +17,10 @@
 .advantages__description {
   padding: 25px 45px;
   text-align: center;
+}
+
+.advantages__list {
+  width: 300%;
 }
 
 .advantages__item--fast {
@@ -34,4 +43,48 @@
 
 .advantages__toggle {
   border: 1px solid #959595;
+}
+
+
+@media @tablet-width {
+  .advantages__wrapper {
+    overflow-x: auto;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 74%;
+    margin: 0 13%;
+    padding: 35px 0;
+
+    background-position: left center;
+
+    &--fast,
+    &--cool {
+      border-bottom: 1px solid #4a4a4a;
+    }
+  }
+
+  .advantages__title {
+    padding-left: 130px;
+  }
+
+  .advantages__description {
+    padding: 0;
+    padding-left: 130px;
+    text-align: left;
+  }
+
+  .advantages__toggle {
+    display: none;
+  }
 }
