@@ -1,7 +1,7 @@
 .reviews {
   padding: 35px 0;
   color: black;
-  background: #ffffff url("../img/triangle-mobile-black.svg") no-repeat bottom / 110%;
+  background: #f8f5f2 url("../img/triangle-mobile-black.svg") no-repeat bottom / 110%;
   border-top: 1px solid #e5ddd5;
 }
 
@@ -22,7 +22,7 @@
 
 .reviews__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   width: 100%;
   padding: 0 20px;
@@ -45,15 +45,102 @@
   margin-top: 15px;
 }
 
-.reviews__toggle {
-  border: 1px solid #858483;
+.reviews__btns {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  margin: 0 auto;
 }
 
 .reviews__next,
 .reviews__prev {
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+.reviews__prev {
+  border-right: 10px solid #000000;
+}
+
+.reviews__next {
+  border-left: 10px solid #000000;
+}
+
+.reviews__user-post,
+.reviews__hidden-text {
   display: none;
 }
 
-.reviews__write {
-  display: none;
+
+@media @tablet-width {
+  .reviews {
+    padding: 35px 7.8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background: #f8f5f2;
+  }
+
+  .reviews__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #e5ddd5;
+  }
+
+  .reviews__title {
+    order: -2;
+    padding-bottom: 35px;
+    font-size: 32px;
+  }
+
+  .reviews__user-post {
+    display: inline-block;
+    order: -1;
+    height: 20px;
+    padding: 10px 20px;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+
+    border: 1px solid #e5ddd5;
+  }
+
+  .reviews__item {
+    width: 26%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .reviews__next,
+  .reviews__prev {
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    bottom: 390px;
+
+    width: 0px;
+    height: 0px;
+
+    border: 5px solid transparent;
+
+    cursor: pointer;
+  }
+
+  .reviews__prev {
+    left: 9%;
+    border-right: 10px solid #000000;
+  }
+
+  .reviews__next {
+    right: 9%;
+    border-left: 10px solid #000000;
+  }
 }

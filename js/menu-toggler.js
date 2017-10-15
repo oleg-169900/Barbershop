@@ -11,7 +11,7 @@
     menuToggler.classList.add("menu-toggler__elem--burger");
 
     if (window.innerWidth >= "768") {
-      mainNav.style.display = "block";
+      mainNav.style.display = "flex";
       menuToggler.style.display = "none";
     } else {
       menuToggler.style.display = "block";
