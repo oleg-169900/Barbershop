@@ -1,0 +1,6 @@
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="140px" height="140px" viewBox="0 0 200 200" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+  <circle r="70" cx="50%" cy="50%" fill="transparent" stroke="#ffffff" stroke-width="20" stroke-dasharray="2 34.6" stroke-dashoffset="1"/>
+  <circle r="5" cx="50%" cy="50%" fill="transparent" stroke="#ffffff" stroke-width="3"/>
+  <line x1="51.5%" y1="49%" x2="145" y2="75" stroke="#ffffff" stroke-width="4"/>
+  <line x1="48%" y1="49%" x2="70" y2="85" stroke="#ffffff" stroke-width="4"/>
+</svg>

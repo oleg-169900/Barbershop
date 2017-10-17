@@ -1,0 +1,107 @@
+.photos {
+  width: 87.5%;
+  padding: 0 6.25%;
+  color: #000000;
+  background-color: #f8f5f2;
+}
+
+.photos__item {
+  margin-bottom: 20px;
+  outline: 1px solid #e5ddd5;
+}
+
+.photos__item--first::after {
+  content: "Работа месяца";
+  display: inline-block;
+  vertical-align: middle;
+
+  position: absolute;
+  top: 600px;
+
+  width: 176px;
+  height: 38px;
+  padding-top: 12px;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: url("../img/label.png") no-repeat;
+}
+
+.photos__item-wrapper {
+  width: auto;
+  padding: 0 20px;
+}
+
+.photos__item--first {
+  .photos__photo-wrapper {
+    height: auto;
+  }
+
+  .photos__photo {
+    margin-left: -200px;
+  }
+}
+
+.photos__title {
+  padding: 20px 0;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.photos__photo-wrapper {
+  width: 100%;
+  height: 177px;
+  overflow: hidden;
+}
+
+.photos__photo-title {
+  margin: 10px 0;
+}
+
+.photos__text {
+  line-height: 28px;
+}
+
+.photos__services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.photos__service::before {
+  content: "";
+  width: 40px;
+  height: 20px;
+
+  background-image: url("../img/icons-photo.png");
+  background-repeat: no-repeat;
+}
+
+.photos__service {
+  display: flex;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  &--scissors::before {
+    background-position: 11% bottom;
+  }
+
+  &--mustache::before {
+    margin-right: 15px;
+    background-position: 11% center;
+  }
+}
+
+
+.photos__service:last-child {
+  flex-grow: 1;
+}
