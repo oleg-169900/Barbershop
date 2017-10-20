@@ -1,18 +1,61 @@
+.field-radio {
+  margin-top: 30px;
+}
+
+.field-radio__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.field-radio__title {
+  flex-grow: 1;
+  width: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.field-radio__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+
+  width: 60px;
+  margin-bottom: 25px;
+  padding: 0 5%;
+}
+
 .field-radio__input {
   display: none;
+}
+
+.field-radio__text {
+  font-size: 14px;
+  text-align: center;
 }
 
 .field-radio__text::before {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 55px;
-  height: 55px;
-  margin-right: 23px;
+
+  width: 54px;
+  height: 54px;
+  margin-bottom: 15px;
+
+  border: 1px solid #e5ddd5;
   border-radius: 50%;
 
   background: #ffffff;
 }
 
 .field-radio__input:checked + .field-radio__text::before {
+  background: radial-gradient(at center, #826550 25%, #ffffff 25%);
 }
