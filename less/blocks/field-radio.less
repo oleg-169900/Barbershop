@@ -1,0 +1,18 @@
+.field-radio__input {
+  display: none;
+}
+
+.field-radio__text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 55px;
+  height: 55px;
+  margin-right: 23px;
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+.field-radio__input:checked + .field-radio__text::before {
+}

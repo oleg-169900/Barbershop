@@ -4,9 +4,181 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width">
     <title>Записаться</title>
   </head>
   <body>
+    <div class="body-wrapper">
+      <header class="page-header">
+        <div class="page-header__logo  page-header__logo--secondary">
+          <a class="page-header__link" href="index.html">
+            <picture class="page-header__logo-img">
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+              <img src="img/logo-mobile.png" alt="logo">
+            </picture>
+          </a>
+        </div>
+        <p class="page-header__title">Записаться</p>
+        <button class="menu-toggler" type="button">
+          <span class="menu-toggler__elem  menu-toggler__elem--cross"></span>
+          <span class="menu-toggler__text">Открыть меню</span>
+        </button>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list  main-nav__list--site-list">
+              <li class="main-nav__list-item">
+                <a class="main-nav__link" href="index.html">
+                  <span class="main-nav__text">Главная</span>
+                </a>
+              </li>
+              <li class="main-nav__list-item">
+                <a class="main-nav__link">
+                  <span class="main-nav__text">Наши работы</span>
+                </a>
+              </li>
+              <li class="main-nav__list-item  main-nav__list-item--active">
+                <a class="main-nav__link" href="form.html">
+                  <span class="main-nav__text">Записаться</span>
+                </a>
+              </li>
+              <li class="main-nav__list-item">
+                <a class="main-nav__link" href="#">
+                  <span class="main-nav__text">HTML Academy</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="main-nav__list  main-nav__list--user-list">
+              <li class="main-nav__list-item">
+                <a class="main-nav__link  main-nav__link--reg" href="#">
+                  <span class="main-nav__text  main-nav__text--reg">Регистрация</span>
+                </a>
+              </li>
+              <li class="main-nav__list-item">
+                <a class="main-nav__link  main-nav__link--login" href="#">
+                  <span class="main-nav__text  main-nav__text--login">Вход</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
+      <main class="page-main">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="form__title">Запись на стрижку</h2>
+          <a class="form__link" href="index.html">На главную</a>
+
+          <fieldset class="field-text  field-text--personal">
+            <label class="field-text__item">
+              <input class="field-text__input  field-text__input--surname" type="text" name="user-surname" placeholder="Фамилия" required>
+            </label>
+            <label class="field-text__item">
+              <input class="field-text__input  field-text__input--name" type="text" name="username" placeholder="Имя" required>
+            </label>
+            <label class="field-text__item">
+              <input class="field-text__input  field-text__input--patronymic" type="text" name="user-patronymic" placeholder="Отчество">
+            </label>
+          </fieldset>
+
+          <fieldset class="field-text  field-text--contacts">
+            <label class="field-text__item  field-text__item--contacts  field-text__item--tel">
+              <input class="field-text__input  field-text__input--tel" type="tel" name="tel" placeholder="Контактный телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+            </label>
+            <label class="field-text__item  field-text__item--contacts  field-text__item--email">
+              <input class="field-text__input  field-text__input--email" type="email" name="email" placeholder="Контактный e-mail" required>
+            </label>
+          </fieldset>
+
+          <fieldset class="field-text  field-text--info">
+            <textarea class="field-text__textarea" name="information" rows="5" cols="21">   Доп. информация для мастера</textarea>
+          </fieldset>
+
+          <fieldset class="field-radio">
+            <legend class="field-radio__title">Выберите модель бороды:</legend>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="model" checked>
+              <span class="field-radio__text">Адмирал</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="model">
+              <span class="field-radio__text">Лесоруб</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="model">
+              <span class="field-radio__text">Полярник</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="model">
+              <span class="field-radio__text">Боярин</span>
+            </label>
+            <label class="field-radio__item">
+              <input class="field-radio__input" type="radio" name="model">
+              <span class="field-radio__text">Мудрец</span>
+            </label>
+          </fieldset>
+        </form>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="contacts">
+            <b class="contacts__title">Барбершоп «Бородинский»</b>
+            <p class="contacts__text">
+              г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+            </p>
+            <a class="contacts__phone" href="tel:+78125556666">
+              +7 (812) 555-66-66
+            </a>
+          </div>
+          <div class="social">
+            <b class="social__title">Давайте дружить!</b>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link  social__link--vk" href="https://vk.com/htmlacademy">
+                  <span class="social__text">Мы в Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacademy">
+                  <span class="social__text">Мы в Фейсбуке</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link  social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                  <span class="social__text">Мы в Инстаграме</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="button__text">HTML Academy</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      <form class="enter-form" action="#" method="get">
+        <span class="enter-form__cross"></span>
+        <h2 class="enter-form__title">Личный кабинет</h2>
+        <p class="enter-form__text">Введите свой логин и пароль, чтобы войти</p>
+        <input class="enter-form__input  enter-form__input--login" type="text" name="login" placeholder="Логин">
+        <br>
+        <input class="enter-form__input  enter-form__input--password" type="password" name="password" placeholder="Пароль">
+        <br>
+        <label class="enter-form__checkbox-field">
+          <input class="enter-form__checkbox" type="checkbox" name="remember" checked>
+          <span class="enter-form__checkbox-text">Запомните меня</span>
+        </label>
+        <a class="enter-form__link" href="#">Я забыл пароль!</a>
+        <button class="enter-form__btn  enter-form__btn--enter" name="enter-cabinet">Войти</button>
+        <button class="enter-form__btn  enter-form__btn--close" name="close-cabinet">Закрыть</button>
+      </form>
+    </div>
+
+    <script src="js/menu-toggler.js" type="text/javascript"></script>
+    <script src="js/login.js" type="text/javascript"></script>
   </body>
 </html>
