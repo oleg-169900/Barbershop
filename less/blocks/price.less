@@ -67,18 +67,23 @@
 
   .price__list {
     margin-bottom: 10px;
+    border: 1px solid #4a4a4a;
   }
 
   .price__row {
     width: 100%;
     padding: 0;
     justify-content: flex-end;
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+  .price__row:last-child {
+    border: none;
   }
 
   .price__cell {
     padding: 3%;
-    border: 1px solid #4a4a4a;
-    border-right: none;
+    border-right: 1px solid #4a4a4a;
   }
 
   .price__cell:first-child {
@@ -97,7 +102,7 @@
   }
 
   .price__cell:last-child {
-    border-right: 1px solid #4a4a4a;
+    border: none;
   }
 
   .price__discount {
@@ -126,12 +131,15 @@
 
   .price__discount {
     width: 130px;
-    height: auto;
+    margin-left: 60px;
     padding: 25px 70px;
     padding-top: 200px;
 
     text-align: center;
     font-size: 16px;
     font-weight: normal;
+
+    background-size: 145px 145px;
+    background-position: center 30px;
   }
 }
