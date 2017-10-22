@@ -38,3 +38,48 @@
   border: none;
   cursor: pointer;
 }
+
+
+@media @tablet-width {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 84%;
+    padding: 35px 8%;
+    padding-bottom: 70px;
+
+    background: #f8f5f2;
+  }
+
+  .form__inner {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .form__title {
+    padding-top: 0;
+    padding-bottom: 35px;
+    font-size: 32px;
+  }
+
+  .form__link {
+    display: block;
+
+    height: 20px;
+    padding: 10px 20px;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+
+    border: 1px solid #e5ddd5;
+  }
+
+  .form__btn {
+    width: 100%;
+  }
+}

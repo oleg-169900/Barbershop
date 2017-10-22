@@ -30,3 +30,35 @@
 
   border: 1px solid #e5ddd5;
 }
+
+
+@media @tablet-width {
+  .field-text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .field-text--personal {
+    flex-wrap: nowrap;
+  }
+
+  .field-text__item--tel {
+    margin-bottom: 30px;
+  }
+
+  .field-text__input {
+    padding: 20px 0;
+  }
+
+  .field-text__input::placeholder {
+    font-size: 18px;
+  }
+
+  .field-text__textarea {
+    height: 215px;
+
+    font-size: 20px;
+    font-family: "PT Sans", arial, sans-serif;
+  }
+}

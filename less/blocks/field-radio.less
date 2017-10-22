@@ -59,3 +59,33 @@
 .field-radio__input:checked + .field-radio__text::before {
   background: radial-gradient(at center, #826550 25%, #ffffff 25%);
 }
+
+
+@media @tablet-width {
+  .field-radio {
+    margin-top: 80px;
+    border-top: 1px solid #e5ddd5;
+  }
+
+  .field-radio__title {
+    width: 370px;
+    margin: 0 auto;
+    margin-top: -20px;
+
+    font-size: 26px;
+    
+    background-color: #f8f5f2;
+  }
+
+  .field-radio__wrapper {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field-radio__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
