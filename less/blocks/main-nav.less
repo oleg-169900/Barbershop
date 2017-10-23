@@ -63,13 +63,6 @@
   background-position: 0% 29%;
 }
 
-.main-nav__link--reg:hover::before {
-  background-position: 25% 57%;
-}
-.main-nav__link--login:hover::before {
-  background-position: 25% 29%;
-}
-
 
 @media @tablet-width {
   .main-nav {
@@ -92,7 +85,32 @@
   }
 
   .main-nav__list-item {
+    margin: 0 15px;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
+  }
+
+  .main-nav__list-item--active {
+    border-bottom: 3px solid #826550;
+  }
+
+  .main-nav__list-item:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+
+    background-color: #ffffff;
+
+    border-color: transparent;
+
+    .main-nav__link {
+      color: #000000;
+    }
+
+    .main-nav__link:active {
+      color: #cacaca;
+    }
   }
 
   .main-nav__text--reg,
