@@ -1,6 +1,7 @@
 "use strict";
 
 (function () {
+    var slider = document.querySelectorAll('.slider');
     var reviewsList = document.querySelector('.reviews__list');
     var reviewsItem = document.querySelectorAll('.reviews__item');
     var arrowLeft = document.querySelector('.reviews__prev');
@@ -12,6 +13,12 @@
     var advantagesToggle2 = document.querySelector('#advantage-2');
     var advantagesToggle3 = document.querySelector('#advantage-3');
     var advantagesList = document.querySelector('.advantages__list');
+
+    for (var i = 0; i <= slider.length - 1; i++) {
+      if (slider[i].classList.contains('slider--nojs')) {
+        slider[i].classList.remove('slider--nojs');
+      }
+    }
 
 
     arrowLeft.onclick = function() {

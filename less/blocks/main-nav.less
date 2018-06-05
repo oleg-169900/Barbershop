@@ -1,16 +1,7 @@
 .main-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.main-nav__wrapper {
-  display: none;
   position: absolute;
-  top: 85px;
-  right: 0;
-  z-index: 100;
-
-  width: 79.7%;
+  top: 0;
+  width: 80%;
 }
 
 .main-nav__list--site-list  {
@@ -63,19 +54,22 @@
   background-position: 0% 29%;
 }
 
+.main-nav--nojs {
+  position: static;
+  display: block;
+  width: 100%;
+}
+
 
 @media @tablet-width {
   .main-nav {
-    display: block;
-    width: 100%;
-    background-color: #000000;
-  }
-
-  .main-nav__wrapper {
     position: static;
     display: flex;
     justify-content: space-around;
+
     width: 100%;
+
+    background-color: #000000;
   }
 
   .main-nav__list {

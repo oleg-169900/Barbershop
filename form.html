@@ -20,47 +20,44 @@
           </a>
         </div>
         <p class="page-header__title">Записаться</p>
-        <button class="menu-toggler" type="button">
-          <span class="menu-toggler__elem  menu-toggler__elem--cross"></span>
-          <span class="menu-toggler__text">Открыть меню</span>
+        <button class="menu-toggle" type="button">
+          <span class="hidden">Menu toggle</span>
         </button>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list  main-nav__list--site-list">
-              <li class="main-nav__list-item">
-                <a class="main-nav__link" href="index.html">
-                  <span class="main-nav__text">Главная</span>
-                </a>
-              </li>
-              <li class="main-nav__list-item">
-                <a class="main-nav__link" href="photo.html">
-                  <span class="main-nav__text">Наши работы</span>
-                </a>
-              </li>
-              <li class="main-nav__list-item  main-nav__list-item--active">
-                <a class="main-nav__link">
-                  <span class="main-nav__text">Записаться</span>
-                </a>
-              </li>
-              <li class="main-nav__list-item">
-                <a class="main-nav__link" href="https://htmlacademy.ru/">
-                  <span class="main-nav__text">HTML Academy</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="main-nav__list  main-nav__list--user-list">
-              <li class="main-nav__list-item">
-                <a class="main-nav__link  main-nav__link--reg" href="#">
-                  <span class="main-nav__text  main-nav__text--reg">Регистрация</span>
-                </a>
-              </li>
-              <li class="main-nav__list-item">
-                <a class="main-nav__link  main-nav__link--login" href="#">
-                  <span class="main-nav__text  main-nav__text--login">Вход</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <nav class="main-nav  hidden  main-nav--nojs">
+          <ul class="main-nav__list  main-nav__list--site-list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__link">
+                <span class="main-nav__text">Главная</span>
+              </a>
+            </li>
+            <li class="main-nav__list-item  main-nav__list-item--active">
+              <a class="main-nav__link" href="photo.html">
+                <span class="main-nav__text">Наши работы</span>
+              </a>
+            </li>
+            <li class="main-nav__list-item  main-nav__list-item--active">
+              <a class="main-nav__link" href="form.html">
+                <span class="main-nav__text">Записаться</span>
+              </a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">
+                <span class="main-nav__text">HTML Academy</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list  main-nav__list--user-list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__link  main-nav__link--reg" href="#">
+                <span class="main-nav__text  main-nav__text--reg">Регистрация</span>
+              </a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link  main-nav__link--login" href="#">
+                <span class="main-nav__text  main-nav__text--login">Вход</span>
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -217,7 +214,7 @@
       </form>
     </div>
 
-    <script src="js/menu-toggler.js" type="text/javascript"></script>
+    <script src="js/menu-toggle.js" type="text/javascript"></script>
     <script src="js/login.js" type="text/javascript"></script>
   </body>
 </html>
